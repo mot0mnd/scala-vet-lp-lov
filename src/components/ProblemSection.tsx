@@ -50,7 +50,7 @@ const ProblemSection = () => {
             }`}
           >
             Your Care Is Excellent.{" "}
-            <span className="text-accent">Your Reviews Don't Show It.</span>
+            <span className="text-primary">Your Reviews Don't Show It.</span>
           </h2>
           <p
             className={`text-lg sm:text-xl text-muted-foreground transition-all duration-1000 delay-200 ${

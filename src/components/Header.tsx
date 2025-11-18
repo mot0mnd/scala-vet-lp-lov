@@ -57,7 +57,7 @@ const Header = () => {
             </button>
             <Button
               variant="ghost"
-              className="text-sm font-medium"
+              className="text-sm font-medium hover:bg-primary/10 hover:text-primary"
               onClick={() => window.open("#login", "_self")}
             >
               Log In
@@ -99,7 +99,7 @@ const Header = () => {
               >
                 Proof
               </button>
-              <Button variant="ghost" className="justify-start text-sm font-medium">
+              <Button variant="ghost" className="justify-start text-sm font-medium hover:bg-primary/10 hover:text-primary">
                 Log In
               </Button>
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">

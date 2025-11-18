@@ -48,7 +48,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-base sm:text-lg px-8 py-6 border-2"
+                className="text-base sm:text-lg px-8 py-6 border-2 hover:bg-primary/10 hover:text-primary hover:border-primary"
                 onClick={scrollToProof}
               >
                 <Play className="mr-2 h-5 w-5" />
@@ -91,7 +91,7 @@ const Hero = () => {
             </div>
             
             <div className="absolute -top-6 -right-4 sm:-right-6 bg-card border border-border rounded-xl p-4 shadow-strong backdrop-blur-sm animate-fade-in">
-              <div className="text-3xl font-bold text-accent">85%</div>
+              <div className="text-3xl font-bold text-primary">85%</div>
               <div className="text-sm text-muted-foreground">More Reviews</div>
             </div>
           </div>
