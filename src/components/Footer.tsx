@@ -82,7 +82,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <a
               href="mailto:contact@scala.vet"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-primary hover:text-primary/80 transition-colors font-medium"
             >
               contact@scala.vet
             </a>
