@@ -99,10 +99,10 @@ const Header = () => {
               >
                 Proof
               </button>
-              <Button variant="ghost" className="justify-start text-sm font-medium hover:bg-primary/10 hover:text-primary">
+              <Button variant="outline" className="w-full text-sm font-medium hover:bg-primary/10 hover:text-primary hover:border-primary">
                 Log In
               </Button>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                 Sign up for free
               </Button>
             </div>
