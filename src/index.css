@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 15% 15%;
+
+    --primary: 268 74% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 268 40% 96%;
+    --secondary-foreground: 268 74% 56%;
+
+    --muted: 268 20% 95%;
+    --muted-foreground: 240 15% 45%;
+
+    --accent: 280 80% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 268 15% 88%;
+    --input: 268 15% 88%;
+    --ring: 268 74% 56%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(268 74% 46%), hsl(280 74% 60%));
+    --accent-gradient: linear-gradient(135deg, hsl(280 80% 65%), hsl(290 80% 70%));
+    --shadow-soft: 0 4px 24px -4px hsl(268 74% 56% / 0.15);
+    --shadow-strong: 0 20px 40px -8px hsl(268 74% 56% / 0.25);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 20% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 20% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 20% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 268 74% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 15% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 15% 15%;
+    --muted-foreground: 268 15% 70%;
+
+    --accent: 280 80% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 268 74% 60%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(268 74% 45%), hsl(280 74% 55%));
+    --accent-gradient: linear-gradient(135deg, hsl(280 80% 60%), hsl(290 80% 65%));
+    --shadow-soft: 0 4px 24px -4px hsl(268 74% 60% / 0.2);
+    --shadow-strong: 0 20px 40px -8px hsl(268 74% 60% / 0.3);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
