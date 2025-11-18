@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base sm:text-lg px-8 py-6 shadow-strong"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base sm:text-lg px-8 py-6 shadow-strong"
               >
                 Start a 14-day free trial
                 <ArrowRight className="ml-2 h-5 w-5" />

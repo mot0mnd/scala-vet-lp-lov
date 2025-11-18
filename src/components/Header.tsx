@@ -62,7 +62,7 @@ const Header = () => {
             >
               Log In
             </Button>
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Sign up for free
             </Button>
           </nav>
@@ -102,7 +102,7 @@ const Header = () => {
               <Button variant="ghost" className="justify-start text-sm font-medium">
                 Log In
               </Button>
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Sign up for free
               </Button>
             </div>
