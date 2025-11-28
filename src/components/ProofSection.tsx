@@ -131,11 +131,13 @@ const ProofSection = () => {
                         className="w-full h-full object-cover cursor-pointer"
                         onClick={() => {
                           if (videoRef.current) {
-                            // Unmute and play video on tap
-                            setIsMuted(false);
-                            videoRef.current.muted = false;
+                            // Toggle play/pause and unmute on first interaction
                             if (videoRef.current.paused) {
+                              setIsMuted(false);
+                              videoRef.current.muted = false;
                               videoRef.current.play();
+                            } else {
+                              videoRef.current.pause();
                             }
                           }
                         }}
