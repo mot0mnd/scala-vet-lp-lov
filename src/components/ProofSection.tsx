@@ -125,7 +125,6 @@ const ProofSection = () => {
                     <div className="relative aspect-[9/19.5]">
                       <video
                         ref={videoRef}
-                        autoPlay
                         muted={isMuted}
                         playsInline
                         className="w-full h-full object-cover cursor-pointer"
