@@ -126,10 +126,18 @@ const ProofSection = () => {
                       <video
                         ref={videoRef}
                         autoPlay
-                        loop
                         muted={isMuted}
                         playsInline
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover cursor-pointer"
+                        onClick={() => {
+                          if (videoRef.current) {
+                            if (videoRef.current.paused) {
+                              videoRef.current.play();
+                            } else {
+                              videoRef.current.pause();
+                            }
+                          }
+                        }}
                       >
                         <source src="/karolina.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
