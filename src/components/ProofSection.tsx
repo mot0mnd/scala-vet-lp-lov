@@ -35,8 +35,8 @@ const ProofSection = () => {
     },
     {
       quote: "The one-tap system is brilliant. Our clients love how easy it is to leave reviews.",
-      author: "Dr. Maria Rodriguez",
-      clinic: "Sunshine Veterinary Clinic",
+      author: "Dr. Cecile Hoffer",
+      clinic: "Guillotiere Veterinary Clinic",
       rating: 5
     },
     {
