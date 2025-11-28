@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Star, TrendingUp, Users, MessageSquare } from "lucide-react";
+import { Star, TrendingUp, Users, MessageSquare, Volume2, VolumeX } from "lucide-react";
 import phoneMockup from "@/assets/phone-mockup.jpg";
 
 const ProofSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -110,13 +112,50 @@ const ProofSection = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl blur-xl" />
-                <img
-                  src={phoneMockup}
-                  alt="Scala.vet mobile interface showing review process"
-                  className="relative w-full max-w-xs mx-auto rounded-2xl shadow-strong"
-                />
+              <div className="relative mx-auto w-full max-w-[300px]">
+                {/* Phone mockup with video */}
+                <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 rounded-[3rem] p-3 shadow-2xl">
+                  <div className="bg-black rounded-[2.5rem] overflow-hidden">
+                    {/* Notch */}
+                    <div className="absolute top-3 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-3xl z-10"></div>
+                    
+                    {/* Video */}
+                    <div className="relative aspect-[9/19.5]">
+                      <video
+                        ref={videoRef}
+                        autoPlay
+                        loop
+                        muted={isMuted}
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src="/karolina.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      
+                      {/* Sound Icon like Instagram */}
+                      <button
+                        onClick={() => {
+                          setIsMuted(!isMuted);
+                          if (videoRef.current) {
+                            videoRef.current.muted = !isMuted;
+                          }
+                        }}
+                        className="absolute bottom-4 right-4 w-10 h-10 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all z-10"
+                        aria-label={isMuted ? "Unmute video" : "Mute video"}
+                      >
+                        {isMuted ? (
+                          <VolumeX className="w-5 h-5" />
+                        ) : (
+                          <Volume2 className="w-5 h-5" />
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-[3rem] blur-2xl -z-10 opacity-50"></div>
               </div>
             </div>
           </div>

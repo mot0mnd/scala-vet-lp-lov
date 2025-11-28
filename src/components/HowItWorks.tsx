@@ -98,16 +98,6 @@ const HowItWorks = () => {
             );
           })}
         </div>
-
-        <div
-          className={`text-center space-y-4 transition-all duration-1000 delay-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <p className="text-xl sm:text-2xl font-semibold text-foreground">No training.</p>
-          <p className="text-xl sm:text-2xl font-semibold text-foreground">No dashboard.</p>
-          <p className="text-xl sm:text-2xl font-semibold text-foreground">No friction.</p>
-        </div>
       </div>
     </section>
   );
