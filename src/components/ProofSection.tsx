@@ -106,11 +106,11 @@ const ProofSection = () => {
                 ))}
               </div>
               <blockquote className="text-xl sm:text-2xl font-medium mb-6 leading-relaxed">
-                "We went from 12 reviews to 127 in 3 months. Our phone hasn't stopped ringing since."
+                "We went from 60 reviews to 125 in 3 months. Our phone hasn't stopped ringing since."
               </blockquote>
               <div>
-                <p className="font-semibold text-lg">Dr. Sarah Mitchell</p>
-                <p className="text-muted-foreground">Paws & Claws Veterinary Clinic</p>
+                <p className="font-semibold text-lg">Dr. Karolina Ferreira</p>
+                <p className="text-muted-foreground">Willow Creek Veterinary Clinic</p>
               </div>
             </div>
             <div className="order-1 md:order-2">
