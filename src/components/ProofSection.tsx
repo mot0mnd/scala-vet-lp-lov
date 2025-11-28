@@ -6,6 +6,7 @@ import phoneMockup from "@/assets/phone-mockup.jpg";
 const ProofSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -125,18 +126,27 @@ const ProofSection = () => {
                     <div className="relative aspect-[9/19.5]">
                       <video
                         ref={videoRef}
+                        autoPlay
+                        loop
                         muted={isMuted}
                         playsInline
                         className="w-full h-full object-cover cursor-pointer"
                         onClick={() => {
                           if (videoRef.current) {
-                            // Toggle play/pause and unmute on first interaction
-                            if (videoRef.current.paused) {
+                            if (!hasInteracted) {
+                              // Premier clic : redémarre du début avec le son
+                              videoRef.current.currentTime = 0;
                               setIsMuted(false);
                               videoRef.current.muted = false;
                               videoRef.current.play();
+                              setHasInteracted(true);
                             } else {
-                              videoRef.current.pause();
+                              // Clics suivants : toggle play/pause
+                              if (videoRef.current.paused) {
+                                videoRef.current.play();
+                              } else {
+                                videoRef.current.pause();
+                              }
                             }
                           }
                         }}
