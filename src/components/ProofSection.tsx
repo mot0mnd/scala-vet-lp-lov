@@ -127,21 +127,22 @@ const ProofSection = () => {
                       <video
                         ref={videoRef}
                         autoPlay
-                        loop
+                        loop={!hasInteracted}
                         muted={isMuted}
                         playsInline
                         className="w-full h-full object-cover cursor-pointer"
                         onClick={() => {
                           if (videoRef.current) {
                             if (!hasInteracted) {
-                              // Premier clic : redémarre du début avec le son
+                              // First click: restart from beginning with sound, remove loop
                               videoRef.current.currentTime = 0;
+                              videoRef.current.loop = false;
                               setIsMuted(false);
                               videoRef.current.muted = false;
                               videoRef.current.play();
                               setHasInteracted(true);
                             } else {
-                              // Clics suivants : toggle play/pause
+                              // Following clicks: toggle play/pause
                               if (videoRef.current.paused) {
                                 videoRef.current.play();
                               } else {
