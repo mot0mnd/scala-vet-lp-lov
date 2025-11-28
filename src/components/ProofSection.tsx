@@ -26,27 +26,25 @@ const ProofSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const proofPoints = [
+  const testimonials = [
     {
-      icon: Star,
-      title: "Real Results Demo",
-      description: "See actual clinic data",
+      quote: "Scala.vet transformed how we collect reviews. We're now the top-rated clinic in our area.",
+      author: "Dr. James Chen",
+      clinic: "Happy Paws Animal Hospital",
+      rating: 5
     },
     {
-      icon: Users,
-      title: "Staff Using One-Tap",
-      description: "Instant review trigger",
+      quote: "The one-tap system is brilliant. Our clients love how easy it is to leave reviews.",
+      author: "Dr. Maria Rodriguez",
+      clinic: "Sunshine Veterinary Clinic",
+      rating: 5
     },
     {
-      icon: MessageSquare,
-      title: "Review Flow",
-      description: "SMS to 5-star journey",
-    },
-    {
-      icon: TrendingUp,
-      title: "Before → After",
-      description: "Clinic transformation",
-    },
+      quote: "We went from invisible to the first choice in our neighborhood. Game changer.",
+      author: "Dr. Michael Brown",
+      clinic: "Westside Animal Care",
+      rating: 5
+    }
   ];
 
   return (
@@ -69,25 +67,29 @@ const ProofSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {proofPoints.map((point, index) => {
-            const Icon = point.icon;
-            return (
-              <Card
-                key={index}
-                className={`p-6 hover:shadow-strong transition-all duration-500 cursor-pointer border-2 hover:border-primary/50 ${
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-                style={{ transitionDelay: `${(index + 1) * 150}ms` }}
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-lg mb-2">{point.title}</h3>
-                <p className="text-sm text-muted-foreground">{point.description}</p>
-              </Card>
-            );
-          })}
+        <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-6xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <Card
+              key={index}
+              className={`p-6 hover:shadow-strong transition-all duration-500 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
+              style={{ transitionDelay: `${(index + 1) * 150}ms` }}
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <blockquote className="text-base mb-4 leading-relaxed">
+                "{testimonial.quote}"
+              </blockquote>
+              <div className="border-t pt-4">
+                <p className="font-semibold">{testimonial.author}</p>
+                <p className="text-sm text-muted-foreground">{testimonial.clinic}</p>
+              </div>
+            </Card>
+          ))}
         </div>
 
         {/* Testimonial Card */}
