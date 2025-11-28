@@ -149,6 +149,10 @@ const ProofSection = () => {
                           setIsMuted(!isMuted);
                           if (videoRef.current) {
                             videoRef.current.muted = !isMuted;
+                            // Auto-play video when unmuting
+                            if (videoRef.current.paused) {
+                              videoRef.current.play();
+                            }
                           }
                         }}
                         className="absolute bottom-4 right-4 w-10 h-10 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-all z-10"
