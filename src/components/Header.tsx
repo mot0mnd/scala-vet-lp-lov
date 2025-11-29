@@ -57,12 +57,27 @@ const Header = () => {
             </button>
             <Button
               variant="ghost"
-              className="text-sm font-medium hover:bg-primary/10 hover:text-primary"
-              onClick={() => window.open("#login", "_self")}
+              className="text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all duration-200"
+              onClick={() => {
+                document.body.style.opacity = "0";
+                document.body.style.transition = "opacity 0.15s ease-out";
+                setTimeout(() => {
+                  window.location.href = "https://platform.scala.vet/login";
+                }, 150);
+              }}
             >
               Log In
             </Button>
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-200"
+              onClick={() => {
+                document.body.style.opacity = "0";
+                document.body.style.transition = "opacity 0.15s ease-out";
+                setTimeout(() => {
+                  window.location.href = "https://platform.scala.vet/signup";
+                }, 150);
+              }}
+            >
               Sign up for free
             </Button>
           </nav>
@@ -99,10 +114,29 @@ const Header = () => {
               >
                 Proof
               </button>
-              <Button variant="outline" className="w-full text-sm font-medium hover:bg-primary/10 hover:text-primary hover:border-primary">
+              <Button 
+                variant="outline" 
+                className="w-full text-sm font-medium hover:bg-primary/10 hover:text-primary hover:border-primary transition-all duration-200"
+                onClick={() => {
+                  document.body.style.opacity = "0";
+                  document.body.style.transition = "opacity 0.15s ease-out";
+                  setTimeout(() => {
+                    window.location.href = "https://platform.scala.vet/login";
+                  }, 150);
+                }}
+              >
                 Log In
               </Button>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-200"
+                onClick={() => {
+                  document.body.style.opacity = "0";
+                  document.body.style.transition = "opacity 0.15s ease-out";
+                  setTimeout(() => {
+                    window.location.href = "https://platform.scala.vet/signup";
+                  }, 150);
+                }}
+              >
                 Sign up for free
               </Button>
             </div>
