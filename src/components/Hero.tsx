@@ -92,7 +92,7 @@ const Hero = () => {
             </div>
             
             {/* Floating stat cards */}
-            <div className="absolute -bottom-8 -left-4 sm:-left-6 bg-card border border-border rounded-xl p-4 shadow-strong backdrop-blur-sm animate-fade-in">
+            <div className="absolute bottom-0 -left-4 sm:-left-6 bg-card border border-border rounded-xl p-4 shadow-strong backdrop-blur-sm animate-fade-in">
               <div className="text-3xl font-bold text-primary">4.9★</div>
               <div className="text-sm text-muted-foreground">Avg Rating</div>
             </div>
