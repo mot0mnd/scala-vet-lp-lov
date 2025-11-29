@@ -91,11 +91,8 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground text-center mb-4">
+          <p className="text-sm text-muted-foreground text-center">
             © {currentYear} Scala.vet — All rights reserved.
-          </p>
-          <p className="text-xs text-muted-foreground text-center">
-            This site is not part of the Facebook™ website or Facebook™ Inc. Furthermore, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.
           </p>
         </div>
       </div>
