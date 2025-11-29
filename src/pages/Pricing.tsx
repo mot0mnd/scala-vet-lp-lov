@@ -13,7 +13,6 @@ const Pricing = () => {
   ];
 
   const businessFeatures = [
-    "Full Clinic Setup Done-For-You",
     "Dedicated Onboarding",
     "Client Loyalty Card",
     "Laser Session Tracking",
