@@ -91,7 +91,7 @@ const Pricing = () => {
                 </div>
               </div>
 
-              <p className="text-lg font-medium mb-6">Bouquet d'Émo (14 features premium)</p>
+              <p className="text-lg font-medium mb-6">Everything in Startup, plus:</p>
 
               <ul className="space-y-3 mb-8">
                 {businessFeatures.map((feature, index) => (
