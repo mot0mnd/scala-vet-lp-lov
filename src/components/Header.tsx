@@ -57,7 +57,8 @@ const Header = () => {
             </button>
             <Button
               asChild
-              className="bg-black text-white hover:bg-black/90 text-sm font-medium transition-all duration-200"
+              className="text-white hover:opacity-90 text-sm font-medium transition-all duration-200"
+              style={{ backgroundColor: '#001b3a' }}
             >
               <a href="https://platform.scala.vet/" target="_blank" rel="noopener noreferrer">
                 Log In
@@ -99,7 +100,8 @@ const Header = () => {
               </button>
               <Button 
                 asChild
-                className="w-full bg-black text-white hover:bg-black/90 text-sm font-medium transition-all duration-200"
+                className="w-full text-white hover:opacity-90 text-sm font-medium transition-all duration-200"
+                style={{ backgroundColor: '#001b3a' }}
               >
                 <a href="https://platform.scala.vet/" target="_blank" rel="noopener noreferrer">
                   Log In
