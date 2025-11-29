@@ -39,18 +39,14 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <Button
+                asChild
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-base sm:text-lg px-8 py-6 shadow-strong transition-all duration-200"
-                onClick={() => {
-                  document.body.style.opacity = "0";
-                  document.body.style.transition = "opacity 0.15s ease-out";
-                  setTimeout(() => {
-                    window.location.href = "https://platform.scala.vet/signup";
-                  }, 150);
-                }}
               >
-                Start a 14-day free trial
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="https://platform.scala.vet/signup" target="_blank" rel="noopener noreferrer">
+                  Start a 14-day free trial
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"

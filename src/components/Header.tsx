@@ -56,16 +56,12 @@ const Header = () => {
               Proof
             </button>
             <Button
+              asChild
               className="bg-black text-white hover:bg-black/90 text-sm font-medium transition-all duration-200"
-              onClick={() => {
-                document.body.style.opacity = "0";
-                document.body.style.transition = "opacity 0.15s ease-out";
-                setTimeout(() => {
-                  window.location.href = "https://platform.scala.vet/";
-                }, 150);
-              }}
             >
-              Log In
+              <a href="https://platform.scala.vet/" target="_blank" rel="noopener noreferrer">
+                Log In
+              </a>
             </Button>
           </nav>
 
@@ -102,16 +98,12 @@ const Header = () => {
                 Proof
               </button>
               <Button 
+                asChild
                 className="w-full bg-black text-white hover:bg-black/90 text-sm font-medium transition-all duration-200"
-                onClick={() => {
-                  document.body.style.opacity = "0";
-                  document.body.style.transition = "opacity 0.15s ease-out";
-                  setTimeout(() => {
-                    window.location.href = "https://platform.scala.vet/";
-                  }, 150);
-                }}
               >
-                Log In
+                <a href="https://platform.scala.vet/" target="_blank" rel="noopener noreferrer">
+                  Log In
+                </a>
               </Button>
             </div>
           </nav>
