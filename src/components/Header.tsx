@@ -61,7 +61,7 @@ const Header = () => {
                 document.body.style.opacity = "0";
                 document.body.style.transition = "opacity 0.15s ease-out";
                 setTimeout(() => {
-                  window.location.href = "https://scala.vet/login";
+                  window.location.href = "https://platform.scala.vet/login";
                 }, 150);
               }}
             >
@@ -107,7 +107,7 @@ const Header = () => {
                   document.body.style.opacity = "0";
                   document.body.style.transition = "opacity 0.15s ease-out";
                   setTimeout(() => {
-                    window.location.href = "https://scala.vet/login";
+                    window.location.href = "https://platform.scala.vet/login";
                   }, 150);
                 }}
               >

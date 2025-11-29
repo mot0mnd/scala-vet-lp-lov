@@ -45,7 +45,7 @@ const Hero = () => {
                   document.body.style.opacity = "0";
                   document.body.style.transition = "opacity 0.15s ease-out";
                   setTimeout(() => {
-                    window.location.href = "https://scala.vet/signup";
+                    window.location.href = "https://platform.scala.vet/signup";
                   }, 150);
                 }}
               >
