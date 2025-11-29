@@ -112,14 +112,6 @@ const Pricing = () => {
               </Button>
             </div>
           </div>
-
-          {/* Bottom Note */}
-          <div className="text-center mt-16 max-w-2xl mx-auto">
-            <p className="text-muted-foreground">
-              <strong className="text-foreground">$24 = </strong>simple, clean, no friction<br />
-              <strong className="text-foreground">Business = </strong>premium, serious, setup included
-            </p>
-          </div>
         </div>
       </main>
 
