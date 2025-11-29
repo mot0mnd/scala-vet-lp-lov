@@ -130,16 +130,7 @@ const ProofSection = () => {
                         loop={!hasInteracted}
                         muted={isMuted}
                         playsInline
-                        preload="auto"
                         className="w-full h-full object-cover cursor-pointer"
-                        onLoadedData={() => {
-                          // Force play on load for browsers that support it
-                          if (videoRef.current) {
-                            videoRef.current.play().catch(() => {
-                              // Autoplay failed (like in Telegram), user needs to click
-                            });
-                          }
-                        }}
                         onClick={() => {
                           if (videoRef.current) {
                             if (!hasInteracted) {
