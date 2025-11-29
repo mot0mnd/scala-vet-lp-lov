@@ -20,9 +20,6 @@ const Pricing = () => {
     "Weight Tracker App",
     "Personalized Clinic Page",
     "Staff Access Control",
-    "Advanced A/B Message Tests",
-    "Monthly Audit (10 min)",
-    "Premium Branding Experience",
     "Faster-than-fast Support",
     "Mobile App Included (iOS + Android)"
   ];
