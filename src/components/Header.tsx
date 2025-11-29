@@ -31,7 +31,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex-shrink-0 flex items-center gap-2">
-            <img src="/favicon.ico" alt="Scala.vet logo" className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg" />
+            <img src="/favicon.ico" alt="" className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg" />
             <span className="text-xl sm:text-2xl font-bold text-primary">Scala.vet</span>
           </div>
 
