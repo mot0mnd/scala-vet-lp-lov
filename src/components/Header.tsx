@@ -55,6 +55,12 @@ const Header = () => {
             >
               Proof
             </button>
+            <a
+              href="/pricing"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            >
+              Pricing
+            </a>
             <Button
               asChild
               className="text-white hover:opacity-90 text-sm font-medium transition-all duration-200"
@@ -98,6 +104,12 @@ const Header = () => {
               >
                 Proof
               </button>
+              <a
+                href="/pricing"
+                className="text-left text-sm font-medium text-foreground/80 hover:text-primary transition-colors py-2"
+              >
+                Pricing
+              </a>
               <Button 
                 asChild
                 className="w-full text-white hover:opacity-90 text-sm font-medium transition-all duration-200"
