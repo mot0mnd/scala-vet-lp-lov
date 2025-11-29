@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/:id",
+      "source": "/:id((?!pricing$).*)",
       "destination": "https://platform.scala.vet/:id",
       "has": [
         {
@@ -15,7 +15,7 @@
   ],
   "rewrites": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
