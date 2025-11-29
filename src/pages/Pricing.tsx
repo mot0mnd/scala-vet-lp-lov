@@ -13,7 +13,6 @@ const Pricing = () => {
   ];
 
   const businessFeatures = [
-    "Everything in Startup",
     "Full Clinic Setup Done-For-You",
     "Dedicated Onboarding",
     "Smart Automations (Review Sequences)",
