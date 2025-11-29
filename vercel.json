@@ -1,7 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "/:id",
+      "destination": "https://platform.scala.vet/:id",
+      "has": [
+        {
+          "type": "header",
+          "key": "host",
+          "value": "(?:www\\.)?scala\\.vet"
+        }
+      ],
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/index.html"
     }
   ]
