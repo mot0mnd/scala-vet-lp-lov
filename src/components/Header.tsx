@@ -68,18 +68,6 @@ const Header = () => {
             >
               Log In
             </Button>
-            <Button 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-200"
-              onClick={() => {
-                document.body.style.opacity = "0";
-                document.body.style.transition = "opacity 0.15s ease-out";
-                setTimeout(() => {
-                  window.location.href = "https://platform.scala.vet/signup";
-                }, 150);
-              }}
-            >
-              Sign up for free
-            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -126,18 +114,6 @@ const Header = () => {
                 }}
               >
                 Log In
-              </Button>
-              <Button 
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-200"
-                onClick={() => {
-                  document.body.style.opacity = "0";
-                  document.body.style.transition = "opacity 0.15s ease-out";
-                  setTimeout(() => {
-                    window.location.href = "https://platform.scala.vet/signup";
-                  }, 150);
-                }}
-              >
-                Sign up for free
               </Button>
             </div>
           </nav>
