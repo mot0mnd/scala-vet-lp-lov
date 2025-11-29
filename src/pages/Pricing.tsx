@@ -15,7 +15,6 @@ const Pricing = () => {
   const businessFeatures = [
     "Full Clinic Setup Done-For-You",
     "Dedicated Onboarding",
-    "Smart Automations (Review Sequences)",
     "Client Loyalty Card",
     "Laser Session Tracking",
     "Weight Tracker App",
@@ -39,8 +38,11 @@ const Pricing = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               Simple, Clear <span className="text-primary">Pricing</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
-              Zero bullshit. Pick what works for you.
+            <p className="text-xl text-muted-foreground mb-2">
+              Start with a 7-day free trial
+            </p>
+            <p className="text-lg text-muted-foreground">
+              The most valuable software in your clinic workflow
             </p>
           </div>
 
