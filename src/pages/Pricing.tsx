@@ -20,8 +20,7 @@ const Pricing = () => {
     "Personalized Clinic Page",
     "Staff Access Control",
     "Monthly Audit (10 min)",
-    "Faster-than-fast Support",
-    "Mobile App Included (iOS + Android)"
+    "Faster-than-fast Support"
   ];
 
   return (
