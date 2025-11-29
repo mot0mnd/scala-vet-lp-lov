@@ -56,8 +56,7 @@ const Header = () => {
               Proof
             </button>
             <Button
-              variant="ghost"
-              className="text-sm font-medium hover:bg-primary/10 hover:text-primary transition-all duration-200"
+              className="bg-black text-white hover:bg-black/90 text-sm font-medium transition-all duration-200"
               onClick={() => {
                 document.body.style.opacity = "0";
                 document.body.style.transition = "opacity 0.15s ease-out";
@@ -103,8 +102,7 @@ const Header = () => {
                 Proof
               </button>
               <Button 
-                variant="outline" 
-                className="w-full text-sm font-medium hover:bg-primary/10 hover:text-primary hover:border-primary transition-all duration-200"
+                className="w-full bg-black text-white hover:bg-black/90 text-sm font-medium transition-all duration-200"
                 onClick={() => {
                   document.body.style.opacity = "0";
                   document.body.style.transition = "opacity 0.15s ease-out";
