@@ -92,14 +92,14 @@ const Hero = () => {
             </div>
             
             {/* Floating stat cards */}
-            <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-card border border-border rounded-xl px-3 py-2 sm:p-4 shadow-strong backdrop-blur-sm animate-fade-in min-w-[90px]">
-              <div className="text-2xl sm:text-3xl font-bold text-primary leading-tight">4.9★</div>
-              <div className="text-[10px] sm:text-sm text-muted-foreground whitespace-nowrap leading-tight">Avg Rating</div>
+            <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-card border border-border rounded-xl p-4 shadow-strong backdrop-blur-sm animate-fade-in">
+              <div className="text-3xl font-bold text-primary">4.9★</div>
+              <div className="text-sm text-muted-foreground">Avg Rating</div>
             </div>
             
-            <div className="absolute -top-6 -right-4 sm:-right-6 bg-card border border-border rounded-xl px-3 py-2 sm:p-4 shadow-strong backdrop-blur-sm animate-fade-in min-w-[100px]">
-              <div className="text-2xl sm:text-3xl font-bold text-primary leading-tight">85%</div>
-              <div className="text-[10px] sm:text-sm text-muted-foreground whitespace-nowrap leading-tight">More Reviews</div>
+            <div className="absolute -top-6 -right-4 sm:-right-6 bg-card border border-border rounded-xl p-4 shadow-strong backdrop-blur-sm animate-fade-in">
+              <div className="text-3xl font-bold text-primary">85%</div>
+              <div className="text-sm text-muted-foreground">More Reviews</div>
             </div>
           </div>
         </div>
