@@ -1,15 +1,19 @@
 {
+  "rewrites": [
+    {
+      "source": "/pricing",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/:id([0-9a-zA-Z]{6})",
       "destination": "https://platform.scala.vet/:id",
       "permanent": false
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
