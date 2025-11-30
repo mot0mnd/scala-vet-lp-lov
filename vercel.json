@@ -15,18 +15,6 @@
       "destination": "https://platform.scala.vet/:id",
       "permanent": false
     }
-<<<<<<< HEAD
-=======
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/pricing",
-      "destination": "/pricing.html"
-    }
   ],
   "headers": [
     {
@@ -38,6 +26,5 @@
         }
       ]
     }
->>>>>>> 90c746632304559ad645a6689495169421066c41
   ]
 }
