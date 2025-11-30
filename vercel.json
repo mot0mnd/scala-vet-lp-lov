@@ -15,5 +15,29 @@
       "destination": "https://platform.scala.vet/:id",
       "permanent": false
     }
+<<<<<<< HEAD
+=======
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+>>>>>>> 90c746632304559ad645a6689495169421066c41
   ]
 }
