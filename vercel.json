@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:id([0-9a-zA-Z]{6})",
-      "destination": "https://platform.scala.vet/:id",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
       "source": "/",
@@ -31,4 +24,4 @@
       ]
     }
   ]
-}s
+}
