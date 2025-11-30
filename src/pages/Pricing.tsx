@@ -48,9 +48,10 @@ const Pricing = () => {
             <div className="border border-border rounded-2xl p-8 bg-card hover:shadow-strong transition-all">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold mb-2">STARTUP</h3>
-                <div className="flex items-baseline gap-2">
+                <p className="text-sm text-muted-foreground mb-2">starts at</p>
+                <div className="flex flex-col">
                   <span className="text-5xl font-bold">$24</span>
-                  <span className="text-muted-foreground">/ month</span>
+                  <span className="text-sm text-muted-foreground uppercase tracking-wide mt-1">seat / per month</span>
                 </div>
               </div>
 
