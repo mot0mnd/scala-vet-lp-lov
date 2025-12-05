@@ -70,7 +70,7 @@ const Pricing = () => {
                 asChild
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <a href="https://platform.scala.vet/signup" target="_blank" rel="noopener noreferrer">
+                <a href="https://scalavet.chargebee.com/checkout/subscribe/startup_monthly" target="_blank" rel="noopener noreferrer">
                   Start Now
                 </a>
               </Button>
